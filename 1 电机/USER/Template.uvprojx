@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\FWLIB\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE;..\HARDWARE\MQ;..\HARDWARE\dht11;..\HARDWARE\OLED;..\HARDWARE\VL53L1X\core;..\HARDWARE\VL53L1X\demo;..\HARDWARE\VL53L1X\platform;..\HARDWARE\bc25;..\HARDWARE\CS</IncludePath>
+              <IncludePath>..\CORE;..\FWLIB\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE;..\HARDWARE\MQ;..\HARDWARE\dht11;..\HARDWARE\OLED;..\HARDWARE\VL53L1X\core;..\HARDWARE\VL53L1X\demo;..\HARDWARE\VL53L1X\platform;..\HARDWARE\bc25;..\HARDWARE\CS;..\HARDWARE\motor</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -563,6 +563,11 @@
               <FileName>cs.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\CS\cs.c</FilePath>
+            </File>
+            <File>
+              <FileName>motor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\motor\motor.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -31,6 +31,7 @@
 "..\obj\stm32f10x_it.o"
 "..\obj\system_stm32f10x.o"
 "..\obj\cs.o"
+"..\obj\motor.o"
 --strict --scatter "..\OBJ\Templete.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
