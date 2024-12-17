@@ -3,4 +3,7 @@
 extern u16 USART_RX_STA3;
 extern u8 USART3_RX_BUF[200];
 
+
 void uart3_init(void);
+void USART_SendString(char *str);
+void USART_SendNumber(u8 num);

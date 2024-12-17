@@ -1,6 +1,7 @@
 #include "stm32f10x.h"
+#include "pwm.h"
 
-// ¶¨Òåµç»úAºÍµç»úBµÄÒý½Å
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½Íµï¿½ï¿½Bï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 #define AIN1_PORT GPIOB
 #define AIN1_PIN  GPIO_Pin_14
 
@@ -19,3 +20,21 @@ void Motor_GPIO_Init(void);
 void MotorA_SetDirection(uint8_t dir);
 
 void MotorB_SetDirection(uint8_t dir);
+
+void Car_Forward(void);
+
+void Car_Backward(void);
+
+void Car_Stop(void);
+
+void Car_TurnLeft(void);
+
+void Car_TurnRight(void);
+
+void Car_SlightLeft(void);
+
+void Car_SlightRight(void);
+
+void Car_AvoidLeft(void);
+
+void Car_AvoidRight(void);

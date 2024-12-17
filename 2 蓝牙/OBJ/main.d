@@ -36,4 +36,5 @@
 ..\obj\main.o: ..\HARDWARE\CS\cs.h
 ..\obj\main.o: ..\HARDWARE\pwm\pwm.h
 ..\obj\main.o: ..\HARDWARE\motor\motor.h
+..\obj\main.o: ..\HARDWARE\pwm\pwm.h
 ..\obj\main.o: ..\HARDWARE\bluetooth\bluetooth.h

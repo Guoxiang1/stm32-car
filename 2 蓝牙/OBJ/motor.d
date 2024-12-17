@@ -29,3 +29,4 @@
 ..\obj\motor.o: ..\FWLIB\inc\stm32f10x_usart.h
 ..\obj\motor.o: ..\FWLIB\inc\stm32f10x_wwdg.h
 ..\obj\motor.o: ..\FWLIB\inc\misc.h
+..\obj\motor.o: ..\HARDWARE\pwm\pwm.h

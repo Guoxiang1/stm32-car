@@ -763,7 +763,7 @@ I (..\FWLIB\inc\stm32f10x_wwdg.h)(0x675FE499)
 I (..\FWLIB\inc\misc.h)(0x675FE499)
 I (..\SYSTEM\usart\usart.h)(0x675FE499)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
-F (.\main.c)(0x67611A56)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE -I ..\HARDWARE\MQ -I ..\HARDWARE\dht11 -I ..\HARDWARE\OLED -I ..\HARDWARE\VL53L1X\core -I ..\HARDWARE\VL53L1X\demo -I ..\HARDWARE\VL53L1X\platform -I ..\HARDWARE\bc25 -I ..\HARDWARE\CS -I ..\HARDWARE\motor -I ..\HARDWARE\pwm -I ..\HARDWARE\bluetooth-IC:\Users\窔場\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+F (.\main.c)(0x67617646)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE -I ..\HARDWARE\MQ -I ..\HARDWARE\dht11 -I ..\HARDWARE\OLED -I ..\HARDWARE\VL53L1X\core -I ..\HARDWARE\VL53L1X\demo -I ..\HARDWARE\VL53L1X\platform -I ..\HARDWARE\bc25 -I ..\HARDWARE\CS -I ..\HARDWARE\motor -I ..\HARDWARE\pwm -I ..\HARDWARE\bluetooth-IC:\Users\窔場\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
 I (..\SYSTEM\sys\sys.h)(0x675FE499)
 I (..\USER\stm32f10x.h)(0x675FE499)
 I (..\CORE\core_cm3.h)(0x675FE499)
@@ -799,8 +799,8 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (..\HARDWARE\CS\cs.h)(0x675FE499)
 I (..\HARDWARE\pwm\pwm.h)(0x6760DE19)
-I (..\HARDWARE\motor\motor.h)(0x6760EAFA)
-I (..\HARDWARE\bluetooth\bluetooth.h)(0x6760EA8F)
+I (..\HARDWARE\motor\motor.h)(0x67612AA1)
+I (..\HARDWARE\bluetooth\bluetooth.h)(0x67613722)
 F (.\stm32f10x_it.c)(0x675FE499)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE -I ..\HARDWARE\MQ -I ..\HARDWARE\dht11 -I ..\HARDWARE\OLED -I ..\HARDWARE\VL53L1X\core -I ..\HARDWARE\VL53L1X\demo -I ..\HARDWARE\VL53L1X\platform -I ..\HARDWARE\bc25 -I ..\HARDWARE\CS -I ..\HARDWARE\motor -I ..\HARDWARE\pwm -I ..\HARDWARE\bluetooth-IC:\Users\窔場\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_it.o --omf_browse ..\obj\stm32f10x_it.crf --depend ..\obj\stm32f10x_it.d)
 I (stm32f10x_it.h)(0x675FE499)
 I (stm32f10x.h)(0x675FE499)
@@ -894,8 +894,8 @@ I (..\FWLIB\inc\stm32f10x_wwdg.h)(0x675FE499)
 I (..\FWLIB\inc\misc.h)(0x675FE499)
 I (..\SYSTEM\delay\delay.h)(0x675FE499)
 I (..\SYSTEM\sys\sys.h)(0x675FE499)
-F (..\HARDWARE\motor\motor.c)(0x6760DCA1)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE -I ..\HARDWARE\MQ -I ..\HARDWARE\dht11 -I ..\HARDWARE\OLED -I ..\HARDWARE\VL53L1X\core -I ..\HARDWARE\VL53L1X\demo -I ..\HARDWARE\VL53L1X\platform -I ..\HARDWARE\bc25 -I ..\HARDWARE\CS -I ..\HARDWARE\motor -I ..\HARDWARE\pwm -I ..\HARDWARE\bluetooth-IC:\Users\窔場\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\motor.o --omf_browse ..\obj\motor.crf --depend ..\obj\motor.d)
-I (..\HARDWARE\motor\motor.h)(0x6760EAFA)
+F (..\HARDWARE\motor\motor.c)(0x6761296E)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE -I ..\HARDWARE\MQ -I ..\HARDWARE\dht11 -I ..\HARDWARE\OLED -I ..\HARDWARE\VL53L1X\core -I ..\HARDWARE\VL53L1X\demo -I ..\HARDWARE\VL53L1X\platform -I ..\HARDWARE\bc25 -I ..\HARDWARE\CS -I ..\HARDWARE\motor -I ..\HARDWARE\pwm -I ..\HARDWARE\bluetooth-IC:\Users\窔場\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\motor.o --omf_browse ..\obj\motor.crf --depend ..\obj\motor.d)
+I (..\HARDWARE\motor\motor.h)(0x67612AA1)
 I (..\USER\stm32f10x.h)(0x675FE499)
 I (..\CORE\core_cm3.h)(0x675FE499)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
@@ -924,6 +924,7 @@ I (..\FWLIB\inc\stm32f10x_tim.h)(0x675FE499)
 I (..\FWLIB\inc\stm32f10x_usart.h)(0x675FE499)
 I (..\FWLIB\inc\stm32f10x_wwdg.h)(0x675FE499)
 I (..\FWLIB\inc\misc.h)(0x675FE499)
+I (..\HARDWARE\pwm\pwm.h)(0x6760DE19)
 F (..\HARDWARE\pwm\pwm.c)(0x6760DE18)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE -I ..\HARDWARE\MQ -I ..\HARDWARE\dht11 -I ..\HARDWARE\OLED -I ..\HARDWARE\VL53L1X\core -I ..\HARDWARE\VL53L1X\demo -I ..\HARDWARE\VL53L1X\platform -I ..\HARDWARE\bc25 -I ..\HARDWARE\CS -I ..\HARDWARE\motor -I ..\HARDWARE\pwm -I ..\HARDWARE\bluetooth-IC:\Users\窔場\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\pwm.o --omf_browse ..\obj\pwm.crf --depend ..\obj\pwm.d)
 I (..\HARDWARE\pwm\pwm.h)(0x6760DE19)
 I (..\USER\stm32f10x.h)(0x675FE499)
@@ -954,8 +955,8 @@ I (..\FWLIB\inc\stm32f10x_tim.h)(0x675FE499)
 I (..\FWLIB\inc\stm32f10x_usart.h)(0x675FE499)
 I (..\FWLIB\inc\stm32f10x_wwdg.h)(0x675FE499)
 I (..\FWLIB\inc\misc.h)(0x675FE499)
-F (..\HARDWARE\bluetooth\bluetooth.c)(0x6760F1CD)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE -I ..\HARDWARE\MQ -I ..\HARDWARE\dht11 -I ..\HARDWARE\OLED -I ..\HARDWARE\VL53L1X\core -I ..\HARDWARE\VL53L1X\demo -I ..\HARDWARE\VL53L1X\platform -I ..\HARDWARE\bc25 -I ..\HARDWARE\CS -I ..\HARDWARE\motor -I ..\HARDWARE\pwm -I ..\HARDWARE\bluetooth-IC:\Users\窔場\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\bluetooth.o --omf_browse ..\obj\bluetooth.crf --depend ..\obj\bluetooth.d)
-I (..\HARDWARE\bluetooth\bluetooth.h)(0x6760EA8F)
+F (..\HARDWARE\bluetooth\bluetooth.c)(0x67613722)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE -I ..\HARDWARE\MQ -I ..\HARDWARE\dht11 -I ..\HARDWARE\OLED -I ..\HARDWARE\VL53L1X\core -I ..\HARDWARE\VL53L1X\demo -I ..\HARDWARE\VL53L1X\platform -I ..\HARDWARE\bc25 -I ..\HARDWARE\CS -I ..\HARDWARE\motor -I ..\HARDWARE\pwm -I ..\HARDWARE\bluetooth-IC:\Users\窔場\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\bluetooth.o --omf_browse ..\obj\bluetooth.crf --depend ..\obj\bluetooth.d)
+I (..\HARDWARE\bluetooth\bluetooth.h)(0x67613722)
 I (..\USER\stm32f10x.h)(0x675FE499)
 I (..\CORE\core_cm3.h)(0x675FE499)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)

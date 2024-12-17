@@ -44,13 +44,14 @@ void uart3_init(void)
 }
 u16 USART_RX_STA3;
 u8 USART3_RX_BUF[200];
+
 void USART3_IRQHandler(void)
 {
 	u8 Res;
 	if(USART_GetITStatus(USART3, USART_IT_RXNE) != RESET)  //接收中断(接收到的数据必须是0x0d 0x0a结尾)
 		{
 		Res =USART_ReceiveData(USART3);	//读取接收到的数据
-		USART_SendData(USART1,Res);
+
 		if((USART_RX_STA3&0x8000)==0)//接收未完成
 			{
 			if(USART_RX_STA3&0x4000)//接收到了0x0d
@@ -71,3 +72,21 @@ void USART3_IRQHandler(void)
 			}   		 
      }
 	 }
+// 通过串口发送字符串
+void USART_SendString(char *str)
+{
+    while (*str)
+    {
+        while ((USART3->SR & 0X40) == 0); // 等待发送完成
+        USART3->DR = (u8) *str;
+        str++;
+    }
+}
+
+// 通过串口发送数字
+void USART_SendNumber(u8 num)
+{
+    char buffer[4];
+    sprintf(buffer, "%d", num);
+    USART_SendString(buffer);
+}
