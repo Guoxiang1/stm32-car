@@ -7,6 +7,8 @@
 #include "pwm.h"
 #include "motor.h"
 #include "bluetooth.h"
+#include "misc.h"
+#include "control.h"
 
 // Function prototypes
 
@@ -14,7 +16,6 @@ int length_res;  //用来存放测距结果
 u8 i;
 
 
-void process_bluetooth_cmd(u8 *cmd);
 void Evadible_Mode(void);
 		
 int main(void) {
@@ -44,42 +45,17 @@ int main(void) {
 		delay_ms(1000);
 
 
-	// printf("接收到的数据为：%s\r\n", USART3_RX_BUF);
-	// memset(USART3_RX_BUF, 0, sizeof(USART3_RX_BUF));
-	// USART_RX_STA3 = 0;
+	 	cmd = USART3_RX_BUF;
   
-    process_bluetooth_cmd(USART3_RX_BUF);			//处理蓝牙接收到的命令
+    	process_bluetooth_cmd();			//处理蓝牙接收到的命令
+		// 清空缓冲区
+        memset(USART3_RX_BUF, 0, sizeof(USART3_RX_BUF));
+        USART_RX_STA3 = 0;
 		
 	}
 }
 
-
-void process_bluetooth_cmd(u8 *cmd) {
-    if (strcmp((char *)cmd, "1") == 0) {
-        Car_Forward();   	// 小车前进
-
-    } else if (strcmp((char *)cmd, "2") == 0) {
-        Car_Backward();		// 小车后退
-
-    } else if (strcmp((char *)cmd, "3") == 0) {
-        Car_Stop();			// 小车停止
-
-    } else if (strcmp((char *)cmd, "4") == 0) {
-        Car_TurnLeft();		// 小车左转
-
-    } else if (strcmp((char *)cmd, "5") == 0) {
-        Car_SlightLeft();   // 小车小左转
-
-    } else if (strcmp((char *)cmd, "6") == 0) {
-        Car_TurnRight();	// 小车右转
-
-    } else if (strcmp((char *)cmd, "7") == 0) {
-        Car_SlightRight();	// 小车小右转
-    }
-}
-
-
-void Evadible_Mode(void)
+void Evadible_Mode(void)   //避障模式
 {
 	Car_Forward();		// 小车前进
 	if(length_res<=15)

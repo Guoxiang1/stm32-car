@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\FWLIB\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE;..\HARDWARE\MQ;..\HARDWARE\dht11;..\HARDWARE\OLED;..\HARDWARE\VL53L1X\core;..\HARDWARE\VL53L1X\demo;..\HARDWARE\VL53L1X\platform;..\HARDWARE\bc25;..\HARDWARE\CS;..\HARDWARE\motor;..\HARDWARE\pwm;..\HARDWARE\bluetooth</IncludePath>
+              <IncludePath>..\CORE;..\FWLIB\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE;..\HARDWARE\MQ;..\HARDWARE\dht11;..\HARDWARE\OLED;..\HARDWARE\VL53L1X\core;..\HARDWARE\VL53L1X\demo;..\HARDWARE\VL53L1X\platform;..\HARDWARE\bc25;..\HARDWARE\CS;..\HARDWARE\motor;..\HARDWARE\pwm;..\HARDWARE\bluetooth;..\HARDWARE\control</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -578,6 +578,11 @@
               <FileName>bluetooth.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\bluetooth\bluetooth.c</FilePath>
+            </File>
+            <File>
+              <FileName>control.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\control\control.c</FilePath>
             </File>
           </Files>
         </Group>
