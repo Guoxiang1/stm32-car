@@ -1,9 +1,5 @@
 #ifndef __CS_H
 #define __CS_H 	
-
-#include "stm32f10x.h"
-#include "delay.h"
-
 #include "sys.h"
 #define uint unsigned int
 #define TRIG_Send PBout(8)

@@ -18,6 +18,13 @@ void uart_init_2(u32 bound);
 
 void USART_SendString(char *str);
 void USART_SendNumber(u8 num);
+void PrintChar(char *s);
+void UART3_Send_Char(char *s);
+void USART3_Send_Byte(unsigned char byte) ;
+void USART1_Send_Byte(unsigned char byte);
+void USART1_printf(USART_TypeDef* USARTx, uint8_t *Data,...);
+static char *itoa(int value, char *string, int radix);
+
 #endif
 
 

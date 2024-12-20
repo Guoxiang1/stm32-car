@@ -1,7 +1,5 @@
 #include "pwm.h"                  // Device header
 
-
-
 void PWM_Init(void) {
     TIM_TimeBaseInitTypeDef TIM_TimeBaseStructure;
     TIM_OCInitTypeDef TIM_OCInitStructure;

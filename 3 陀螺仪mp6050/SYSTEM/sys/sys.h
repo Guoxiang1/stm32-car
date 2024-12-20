@@ -50,9 +50,7 @@
 #define PGout(n)   BIT_ADDR(GPIOG_ODR_Addr,n)  //输出 
 #define PGin(n)    BIT_ADDR(GPIOG_IDR_Addr,n)  //输入
 
-typedef enum {FALSE = 0, TRUE = !FALSE} bool;
-#define false FALSE
-#define true TRUE
+
 
 //以下为汇编函数
 void WFI_SET(void);		//执行WFI指令

@@ -1,6 +1,7 @@
 #include "motor.h"
+#include "pwm.h"
 
-
+uint16_t PWMA,PWMB;
 
 // ?????GPIO????
 void Motor_GPIO_Init(void) {
@@ -112,4 +113,33 @@ void Car_AvoidRight(void) {
     MotorA_SetSpeed(700);
     MotorB_SetDirection(2);
     MotorB_SetSpeed(500);
+}
+
+void Set_Pwm(int motor_left, int motor_right)
+{
+    if (motor_left > 0)
+    {
+        GPIO_ResetBits(GPIOB, GPIO_Pin_13); // 前进 BIN1
+        GPIO_SetBits(GPIOB, GPIO_Pin_12);   // BIN2
+    }
+    else
+    {
+        GPIO_SetBits(GPIOB, GPIO_Pin_13);   // 后退
+        GPIO_ResetBits(GPIOB, GPIO_Pin_12); // BIN2
+    }
+    PWMB = myabs(motor_left); // PWM 大小对应转速的大小
+    TIM_SetCompare4(TIM2, PWMB);
+
+    if (motor_right > 0)
+    {
+        GPIO_ResetBits(GPIOB, GPIO_Pin_14); // AIN1
+        GPIO_SetBits(GPIOB, GPIO_Pin_15);   // AIN2
+    }
+    else
+    {
+        GPIO_SetBits(GPIOB, GPIO_Pin_14);   // AIN1
+        GPIO_ResetBits(GPIOB, GPIO_Pin_15); // AIN2
+    }
+    PWMA = myabs(motor_right);
+    TIM_SetCompare3(TIM2, PWMA); // 0.173 0.32 -PWMA*0.318
 }

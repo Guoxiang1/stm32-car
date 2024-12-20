@@ -1,5 +1,7 @@
 #include "control.h"
-
+#include <string.h>
+#include "motor.h"
+#include "usart.h"	
 
 u8 *cmd;
 

@@ -36,9 +36,9 @@
 ..\obj\main.o: ..\HARDWARE\CS\cs.h
 ..\obj\main.o: ..\HARDWARE\pwm\pwm.h
 ..\obj\main.o: ..\HARDWARE\motor\motor.h
-..\obj\main.o: ..\HARDWARE\pwm\pwm.h
 ..\obj\main.o: ..\HARDWARE\bluetooth\bluetooth.h
 ..\obj\main.o: ..\HARDWARE\control\control.h
-..\obj\main.o: ..\HARDWARE\motor\motor.h
-..\obj\main.o: ..\HARDWARE\pwm\pwm.h
-..\obj\main.o: ..\HARDWARE\bluetooth\bluetooth.h
+..\obj\main.o: ..\HARDWARE\balance\balance.h
+..\obj\main.o: ..\HARDWARE\MPU6050\mpu6050.h
+..\obj\main.o: ..\HARDWARE\iic\i2c.h
+..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

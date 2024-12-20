@@ -29,9 +29,8 @@
 ..\obj\control.o: ..\FWLIB\inc\stm32f10x_usart.h
 ..\obj\control.o: ..\FWLIB\inc\stm32f10x_wwdg.h
 ..\obj\control.o: ..\FWLIB\inc\misc.h
+..\obj\control.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\control.o: ..\HARDWARE\motor\motor.h
-..\obj\control.o: ..\HARDWARE\pwm\pwm.h
 ..\obj\control.o: ..\SYSTEM\usart\usart.h
 ..\obj\control.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\control.o: ..\SYSTEM\sys\sys.h
-..\obj\control.o: ..\HARDWARE\bluetooth\bluetooth.h

@@ -1,5 +1,6 @@
 ..\obj\cs.o: ..\HARDWARE\CS\cs.c
 ..\obj\cs.o: ..\HARDWARE\CS\cs.h
+..\obj\cs.o: ..\SYSTEM\sys\sys.h
 ..\obj\cs.o: ..\USER\stm32f10x.h
 ..\obj\cs.o: ..\CORE\core_cm3.h
 ..\obj\cs.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -30,4 +31,3 @@
 ..\obj\cs.o: ..\FWLIB\inc\stm32f10x_wwdg.h
 ..\obj\cs.o: ..\FWLIB\inc\misc.h
 ..\obj\cs.o: ..\SYSTEM\delay\delay.h
-..\obj\cs.o: ..\SYSTEM\sys\sys.h

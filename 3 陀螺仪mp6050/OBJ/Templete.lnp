@@ -35,6 +35,12 @@
 "..\obj\pwm.o"
 "..\obj\bluetooth.o"
 "..\obj\control.o"
+"..\obj\balance.o"
+"..\obj\inv_mpu.o"
+"..\obj\inv_mpu_dmp_motion_driver.o"
+"..\obj\mpu6050.o"
+"..\obj\i2c.o"
+"..\obj\i2c_mpu6050.o"
 --strict --scatter "..\OBJ\Templete.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

@@ -51,6 +51,13 @@ void delay_ms(u16 nms)
 	SysTick->VAL =0X00;       					//Çå¿Õ¼ÆÊýÆ÷	  	    
 } 
 
+void get_ms(unsigned long *time)
+{
+
+}
+
+
+
 
 
 

@@ -1,0 +1,17 @@
+..\obj\adc.o: ..\HARDWARE\adc\adc.c
+..\obj\adc.o: ..\HARDWARE\adc\adc.h
+..\obj\adc.o: ..\USER\stm32f10x.h
+..\obj\adc.o: ..\CORE\core_cm3.h
+..\obj\adc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\adc.o: ..\USER\system_stm32f10x.h
+..\obj\adc.o: ..\USER\stm32f10x_conf.h
+..\obj\adc.o: ..\LIB\inc\stm32f10x_dma.h
+..\obj\adc.o: ..\USER\stm32f10x.h
+..\obj\adc.o: ..\LIB\inc\stm32f10x_gpio.h
+..\obj\adc.o: ..\LIB\inc\stm32f10x_i2c.h
+..\obj\adc.o: ..\LIB\inc\stm32f10x_rcc.h
+..\obj\adc.o: ..\LIB\inc\stm32f10x_tim.h
+..\obj\adc.o: ..\LIB\inc\stm32f10x_usart.h
+..\obj\adc.o: ..\LIB\inc\misc.h
+..\obj\adc.o: ..\SYS\delay\delay.h
+..\obj\adc.o: ..\LIB\inc\stm32f10x_adc.h

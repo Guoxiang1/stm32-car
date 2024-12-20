@@ -83,6 +83,11 @@
   "files.associations": {
     "bluetooth.h": "c",
     "motor.h": "c",
-    "control.h": "c"
+    "control.h": "c",
+    "i2c_init.h": "c",
+    "mp6050.h": "c",
+    "math.h": "c",
+    "cs.h": "c",
+    "stm32f10x.h": "c"
   }
 }
